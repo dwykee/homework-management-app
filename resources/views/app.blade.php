@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <meta property="og:title" content="awfulnotes" />
+        <meta property="og:description" content="Lazy Collegers Society" />
+        <meta property="og:image" content="{{ asset('images/webview.png') }}" />
+        <meta property="og:url" content="{{ config('app.url') }}" />
+        <meta property="og:type" content="website" />
+
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
