@@ -3,18 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta property="og:title" content="awfulnotes" />
-        <meta property="og:description" content="Lazy Collegers Society" />
-        <meta property="og:image" content="{{ asset('images/webview.png') }}" />
-        <meta property="og:url" content="{{ config('app.url') }}" />
-        <meta property="og:type" content="website" />
-
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="{{ asset('images/webview.png') }}">
 
         <!-- Scripts -->
         @routes
