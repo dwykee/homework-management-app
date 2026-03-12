@@ -363,8 +363,8 @@ function AddModal({ onClose, teams }) {
         router.post(route("assignments.store"), form, { onFinish: () => { setLoading(false); onClose(); }, preserveScroll: true });
     };
     return (
-        <div style={{ position: "fixed", inset: 0, background: "rgba(7,89,133,0.35)", display: "flex", alignItems: "flex-end", justifyContent: "center", zIndex: 100, backdropFilter: "blur(6px)" }} onClick={onClose}>
-            <div style={{ background: "#fff", borderRadius: "22px 22px 0 0", padding: "24px 20px", width: "100%", maxWidth: 520, maxHeight: "92vh", overflowY: "auto", boxShadow: "0 -8px 40px rgba(7,89,133,0.2)" }} onClick={e => e.stopPropagation()}>
+        <div style={{ position: "fixed", inset: 0, background: "rgba(7,89,133,0.35)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100, backdropFilter: "blur(6px)" }} onClick={onClose}>
+            <div style={{ background: "#fff", borderRadius: "22px", padding: "24px 20px", width: "100%", maxWidth: 520, maxHeight: "92vh", overflowY: "auto", boxShadow: "0 -8px 40px rgba(7,89,133,0.2)" }} onClick={e => e.stopPropagation()}>
                 {/* drag handle */}
                 <div style={{ width: 40, height: 4, borderRadius: 2, background: T.border, margin: "0 auto 20px" }} />
                 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 22 }}>
