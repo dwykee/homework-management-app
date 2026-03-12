@@ -466,7 +466,7 @@ export default function Index({ assignments, teams, flash }) {
 
     return (
         <AuthenticatedLayout>
-            <Head title="CatatKerjakanNanti" />
+            <Head title="you are awful" />
             <style>{`
                 * { box-sizing: border-box; margin: 0; padding: 0; }
                 body { background: ${T.bg}; }
