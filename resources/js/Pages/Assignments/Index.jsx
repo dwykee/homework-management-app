@@ -42,7 +42,7 @@ function iStyle(extra = {}) {
 }
 
 // ── CHATBOT ───────────────────────────────────────────────────
-function Chatbot() {
+// function Chatbot() {
     const [open, setOpen] = useState(false);
     const [messages, setMessages] = useState([
         { role: "ai", text: "Halo! Aku **Babu-Mu** 🤖\nSaat ini layanan Babu-Mu belum tersedia." }
@@ -177,7 +177,7 @@ function Chatbot() {
             </button>
         </>
     );
-}
+} 
 
 // ── TEAM PANEL ───────────────────────────────────────────────
 function TeamPanel({ teams, onClose }) {
@@ -608,7 +608,7 @@ export default function Index({ assignments, teams, flash }) {
                 <MobileBottomNav filterStatus={filterStatus} setFilterStatus={setFilterStatus} onAdd={() => setShowModal(true)} onTeam={() => setShowTeamPanel(true)} list={list} />
             </div>
 
-            <Chatbot />
+            {/* <Chatbot /> */}
         </AuthenticatedLayout>
     );
 }
